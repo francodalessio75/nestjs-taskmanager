@@ -1,8 +1,22 @@
 ###
-GET http://localhost:3000/tasks
+GET http://localhost:3000/tasks?search=terence
 
-###
+
+### createTask
 POST http://localhost:3000/tasks
 Content-Type: application/x-www-form-urlencoded
 
-title=Clean my room&description=lost of cleaning has to be done
+title=Clean my room&description=lost of boss has to be done
+
+### getTaskById
+GET http://localhost:3000/tasks/ac0ba300-e08d-40bd-9eea-78ef6bc27bb1
+
+
+### deleteTask
+DELETE  http://localhost:3000/tasks/0cb0c6c6-68e7-4dcd-9aae-f5bf2c3c3195
+
+### createTask
+PATCH  http://localhost:3000/tasks/ac0ba300-e08d-40bd-9eea-78ef6bc27bb1/status
+Content-Type: application/x-www-form-urlencoded
+
+status=IN_PROGRESS
