@@ -17,7 +17,7 @@ export class TaskRepository extends Repository<Task>{
     }
 
     async deleteTask(id:string):Promise<boolean>{
-        this.delete( task => task.)
+        this.delete( task => task)
     }
 
 }
